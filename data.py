@@ -15,3 +15,5 @@ class Data:
     BUILD_A_BURGER_TEXT = 'Соберите бургер'
 
     STELLAR_BURGERS_PASSWORD_FAILD = "1234"
+
+    PROFILE_URL = "https://stellarburgers.nomoreparties.site/account/profile"

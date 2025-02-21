@@ -3,8 +3,7 @@ from selenium.webdriver.support.expected_conditions import visibility_of_element
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from conftest import driver
-from conftest import logined_driver
+
 from data import  Data
 from locators import Locators
 
