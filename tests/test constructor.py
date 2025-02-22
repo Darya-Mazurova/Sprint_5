@@ -20,7 +20,7 @@ class TestConstructor:
         WebDriverWait(driver, Data.WAIT_TIME).until(
             EC.visibility_of_element_located(Locators.BUNS))
 
-        assert driver.find_element (*Locators.BUNS)
+        assert driver.find_element (*Locators.BUNS_CLASS)
 
     def test_constructor_sauces (self, driver, logined_driver):
 

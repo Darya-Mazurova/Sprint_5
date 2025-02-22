@@ -43,4 +43,6 @@ class Locators:
     CONSTRUCTOR_SAUCES = (By.XPATH,"//span[text()='Соусы']") #конструктор с соусами
     SAUCES = (By.XPATH,"//h2[text()='Соусы']")
 
-    STELLAR_BURGERS_LOGO = (By.XPATH, "//div[@class = 'AppHeader_header__logo__2D0X2' ]") # главный логотип
+    STELLAR_BURGERS_LOGO= (By.XPATH, "//div[@class = 'AppHeader_header__logo__2D0X2' ]") # главный логотип
+
+    BUNS_CLASS = (By.XPATH, "//div[@class ='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']")
