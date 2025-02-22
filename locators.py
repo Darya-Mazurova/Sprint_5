@@ -35,15 +35,11 @@ class Locators:
     EXIT_BUTTON = (By.XPATH,"//button[text() = 'Выход']")  # кнопка выхода из аккаунта
 
     CONSTRUCTOR_BUNS = (By.XPATH,"//span[text()='Булки']") # конструктор с булками
-    BUNS = (By.XPATH,"//h2[text()='Булки']")
-
 
     CONSTRUCTOR_TOPPINGS= (By.XPATH, "//span[text()='Начинки']") # конструктор с начинками
-    TOPPINGS = (By.XPATH,"//h2[text()='Начинки']")
-
 
     CONSTRUCTOR_SAUCES = (By.XPATH,"//span[text()='Соусы']") #конструктор с соусами
-    SAUCES = (By.XPATH,"//h2[text()='Соусы']")
 
     STELLAR_BURGERS_LOGO= (By.XPATH, "//div[@class = 'AppHeader_header__logo__2D0X2' ]") # главный логотип
 
+    ATIVE_CONSTRUCTOR =  (By.XPATH, '//div[@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]') # класс активного конструктора
