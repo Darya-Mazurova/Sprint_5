@@ -36,11 +36,11 @@ class Locators:
 
     CONSTRUCTOR_BUNS = (By.XPATH,"//span[text()='Булки']") # конструктор с булками
     BUNS = (By.XPATH,"//h2[text()='Булки']")
-    BUNS_CLASS = (By.XPATH, "//div[@class ='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']")
+
 
     CONSTRUCTOR_TOPPINGS= (By.XPATH, "//span[text()='Начинки']") # конструктор с начинками
     TOPPINGS = (By.XPATH,"//h2[text()='Начинки']")
-    TOPPINGS_CLASS = (By.XPATH,)
+
 
     CONSTRUCTOR_SAUCES = (By.XPATH,"//span[text()='Соусы']") #конструктор с соусами
     SAUCES = (By.XPATH,"//h2[text()='Соусы']")
