@@ -2,6 +2,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+import helpers
 from data import Data
 
 from locators import Locators
@@ -19,7 +20,7 @@ class TestRegistration:
         registration_name.send_keys(Data.STELLAR_BURGERS_NAME_USER) # вести  имя
 
         registration_email = driver.find_element(*Locators.STELLAR_BURGERS_REGISTRATION_EMAIL)
-        registration_email.send_keys(Data.STELLAR_BURGERS_EMAIL_USER) # ввести email
+        registration_email.send_keys(helpers.random_email()) # ввести email
 
         registration_password = driver.find_element(*Locators.STELLAR_BURGERS_REGISTRATION_PASSWORD)
         registration_password.send_keys(Data.STELLAR_BURGERS_PASSWORD)# ввести пароль

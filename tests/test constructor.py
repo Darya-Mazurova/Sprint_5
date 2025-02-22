@@ -14,18 +14,26 @@ class TestConstructor:
         constructor_toppings = driver.find_element(*Locators.CONSTRUCTOR_TOPPINGS)
         constructor_toppings.click()
 
+        WebDriverWait(driver, Data.WAIT_TIME).until(
+            EC.visibility_of_element_located(*Locators.))
+
         constructor_buns = driver.find_element(*Locators.CONSTRUCTOR_BUNS)
         constructor_buns.click()
 
         WebDriverWait(driver, Data.WAIT_TIME).until(
             EC.visibility_of_element_located(Locators.BUNS))
 
-        assert driver.find_element (*Locators.BUNS_CLASS)
+        assert driver.find_element (*Locators.BUNS_CLASS). is_displayed()
 
     def test_constructor_sauces (self, driver, logined_driver):
 
+        constructor_toppings = driver.find_element(*Locators.CONSTRUCTOR_TOPPINGS)
+        constructor_toppings.click()
+
+
         constructor_sauces = driver.find_element(*Locators.CONSTRUCTOR_SAUCES)
         constructor_sauces.click()
+
         assert driver.find_element (*Locators.SAUCES)
 
 
